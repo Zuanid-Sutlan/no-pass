@@ -1,12 +1,10 @@
 "use client"
 import React from 'react'
-import { Moon, MoonIcon, Sun } from "lucide-react"
+import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
 import { Button } from "@/components/ui/button"
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { SignInButton } from '@clerk/nextjs'
 import { SignedIn, SignedOut, UserButton } from '@clerk/clerk-react'
-import { Label } from '@/components/ui/label'
 
 export const NavBar = () => {
 
