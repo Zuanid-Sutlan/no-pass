@@ -4,13 +4,15 @@ import { NavBar } from './components/NavBar'
 import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from 'react-hot-toast'
 
+const clerkPublishableKey = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY;
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
   return (
-    <ClerkProvider>
+    <ClerkProvider publishableKey={clerkPublishableKey}>
       <html lang="en" suppressHydrationWarning>
         <body>
           <ThemeProvider
